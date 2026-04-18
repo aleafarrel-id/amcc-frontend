@@ -8,22 +8,22 @@
   </head>
 
   <body class="bg-slate-100">
-    <nav class="bg-white-800 text-white py-6 px-16">
+    <nav class="sticky top-0 flex items-center justify-between bg-white text-white py-4 px-16 shadow-md z-10">
       <div class="text-[24px] font-bold text-[#6c5ce7]">MyPorto.</div>
-      <ul class="text-stone-600">
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#proyek">Proyek</a></li>
+      <ul class="flex space-x-6 text-stone-600">
+        <li><a href="#beranda" class="hover:text-[#6c5ce7] transition-colors duration-300">Beranda</a></li>
+        <li><a href="#tentang" class="hover:text-[#6c5ce7] transition-colors duration-300">Tentang</a></li>
+        <li><a href="#proyek" class="hover:text-[#6c5ce7] transition-colors duration-300">Proyek</a></li>
       </ul>
     </nav>
 
-    <header class="h-150 p-[50px_10%]">
+    <header class="h-150 p-[50px_10%] flex items-center justify-between gap-10">
       <div class="flex flex-col gap-4 w-150">
-        <h1 class="text-6xl">Halo, Saya Frontend Web Dev!</h1>
+        <h1 class="text-6xl font-semibold">Halo, Saya Frontend Web Dev!</h1>
         <p class="text-xl">Membangun antarmuka website yang interaktif, modern, dan responsif.</p>
         <a
           href="#proyek"
-          class="w-50 text-center px-2.5 py-2.5 bg-[#6c5ce7] text-white rounded-[5px] mt-3.75"
+          class="w-50 text-center px-2.5 py-2.5 bg-[#6c5ce7] text-white rounded-[5px] mt-3.75 hover:bg-[#5a4bcf] transition-colors duration-300"
         >
           Lihat Karya Saya
         </a>
@@ -35,10 +35,10 @@
       />
     </header>
 
-    <section class="bg-white min-h-75 p-[50px_10%]">
-      <h2 class="text-[32px] mb-10">Project Terbaru</h2>
+    <section class="bg-white min-h-75 p-[50px_10%] flex flex-col items-center gap-4">
+      <h2 class="text-[32px] mb-10 font-semibold">Project Terbaru</h2>
 
-      <div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         <div
           class="bg-white p-6.25 rounded-[10px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] border-t-4 border-[#6c5ce7] flex flex-col gap-2"
         >
@@ -63,9 +63,9 @@
     </section>
 
     <section id="skills" class="skills-section p-[50px_10%] text-center">
-      <h2 class="text-[32px]">Keahlian Saya</h2>
+      <h2 class="text-[32px] font-semibold">Keahlian Saya</h2>
 
-      <div>
+      <div class="flex flex-wrap justify-center gap-2 mt-8">
         <div
           class="bg-[#6c5ce7] text-white px-4 py-2.5 rounded-[50px] font-bold border-2 border-transparent"
         >
@@ -104,12 +104,12 @@
       </div>
     </section>
 
-    <section class="p-[50px_10%] bg-white">
-      <h2 class="text-[32px] mb-10">Hubungi Saya</h2>
+    <section class="p-[50px_10%] bg-white flex flex-col items-center gap-4">
+      <h2 class="text-[32px] mb-10 font-semibold">Hubungi Saya</h2>
 
-      <div>
+      <div class="flex flex-col md:flex-row gap-10">
         <div class="w-125">
-          <h3 class="text-3xl text-[#6c5ce7] mb-3.75">Mari Berkolaborasi!</h3>
+          <h3 class="text-3xl text-[#6c5ce7] mb-3.75 font-semibold">Mari Berkolaborasi!</h3>
           <p class="text-xl">
             Saya selalu terbuka untuk mendiskusikan proyek website atau peluang kerja sama lainnya.
           </p>
@@ -118,7 +118,7 @@
           <p class="text-xl">📍 Yogyakarta, Indonesia</p>
         </div>
 
-        <form class="bg-slate-100">
+        <form class="w-full md:w-125 flex flex-col gap-3.75">
           <input
             type="text"
             placeholder="Nama Anda"
@@ -136,7 +136,7 @@
           ></textarea>
           <button
             type="submit"
-            class="btn inline-block px-4 py-2.5 bg-[#6c5ce7] text-white rounded-[5px] mt-3.75"
+            class="btn inline-block px-4 py-2.5 bg-[#6c5ce7] text-white rounded-[5px] mt-3.75 hover:bg-[#5a4bcf] transition-colors duration-300 cursor-pointer"
           >
             Kirim Pesan
           </button>
@@ -144,8 +144,8 @@
       </div>
     </section>
 
-    <footer class="text-center bg-[#2d3436] text-white mt-12.5">
-      <p class="text-xl">&copy; 2026 Web Frontend - Amikom Computer Club</p>
+    <footer class="text-center bg-[#2d3436] text-white">
+      <p class="text-xl p-8">&copy; 2026 Web Frontend - Amikom Computer Club</p>
     </footer>
   </body>
 </html>
