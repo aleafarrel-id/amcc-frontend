@@ -1,1 +1,11 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+
+@theme {
+    --color-primary: #468432;
+}
+
+@layer components {
+    .box-primary{
+        @apply bg-primary size-15 m-10 text-white;
+    }
+}
