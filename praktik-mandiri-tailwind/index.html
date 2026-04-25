@@ -9,20 +9,19 @@
 </head>
 
 <body class="bg-slate-100">
-  <nav
-    class="bg-white-800 text-white py-6 px-16 flex justify-between items-center sm:px-10 max-lg:px-8 max-md:px-6 max-lg:flex-col max-lg:gap-4">
-    <div class="text-[24px] font-bold text-[#6c5ce7]">MyPorto.</div>
-    <ul class="text-stone-600 flex gap-8 text-align-center max-lg:flex-wrap max-lg:justify-center max-lg:gap-4">
-      <li><a href="#beranda" class="hover:text-[#6c5ce7] hover:underline ">Beranda</a></li>
-      <li><a href="#tentang" class="hover:text-[#6c5ce7] hover:underline">Tentang</a></li>
-      <li><a href="#proyek" class="hover:text-[#6c5ce7] hover:underline">Proyek</a></li>
+  <nav class="nav-container">
+    <div class="nav-brand">MyPorto.</div>
+    <ul class="nav-menu">
+      <li><a href="#beranda" class="nav-link">Beranda</a></li>
+      <li><a href="#tentang" class="nav-link">Tentang</a></li>
+      <li><a href="#proyek" class="nav-link">Proyek</a></li>
     </ul>
   </nav>
 
-  <header class="h-150 p-[50px_10%] flex items-center justify-between gap-2 max-lg:flex-col-reverse max-lg:h-auto max-lg:p-[50px_5%] max-lg:gap-8 max-lg:text-center">
-    <div class="flex flex-col gap-4 w-150 max-lg:w-full max-lg:items-center">
-      <h1 class="text-6xl max-lg:text-5xl max-md:text-4xl">Halo, Saya Frontend Web Dev!</h1>
-      <p class="text-xl max-md:text-lg">Membangun antarmuka website yang interaktif, modern, dan responsif.</p>
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Halo, Saya Frontend Web Dev!</h1>
+      <p class="hero-subtitle">Membangun antarmuka website yang interaktif, modern, dan responsif.</p>
       <a href="#proyek" class="btn-primary w-50 max-lg:w-full max-w-xs mt-3.75">
         Lihat Karya Saya
       </a>
@@ -30,7 +29,7 @@
 
     <img
       src="https://imgs.search.brave.com/PsLYy0tCITlfZI264hb9MSKWO_ULrX3rAhitDzFOrVg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2RiL2E5/LzliL2RiYTk5Yjhl/OTExODY2Y2ZmMGFj/NjQ0M2NlYWU2ZGRl/LmpwZw"
-      class="w-100 h-100 object-cover rounded-full border-[5px] border-[#6c5ce7] shrink-0 max-lg:w-80 max-lg:h-80 max-md:w-64 max-md:h-64" />
+      class="hero-image" />
   </header>
 
   <section class="bg-white min-h-75 section-container">
@@ -88,14 +87,14 @@
     <h2 class="section-title">Hubungi Saya</h2>
 
     <div class="gap-12 items-start grid grid-cols-2 max-lg:grid-cols-1">
-      <div class="w-125 max-lg:w-full max-lg:text-center">
-        <h3 class="text-3xl text-[#6c5ce7] mb-3.75">Mari Berkolaborasi!</h3>
-        <p class="text-xl">
+      <div class="contact-info">
+        <h3 class="contact-title">Mari Berkolaborasi!</h3>
+        <p class="contact-text">
           Saya selalu terbuka untuk mendiskusikan proyek website atau peluang kerja sama lainnya.
         </p>
         <br />
-        <p class="text-xl">📧 email@contoh.com</p>
-        <p class="text-xl">📍 Yogyakarta, Indonesia</p>
+        <p class="contact-text">📧 email@contoh.com</p>
+        <p class="contact-text">📍 Yogyakarta, Indonesia</p>
       </div>
 
       <form class="bg-slate-100 flex-1 max-lg:w-full">
@@ -109,7 +108,7 @@
     </div>
   </section>
 
-  <footer class="flex justify-center items-center bg-[#2d3436] text-white mt-12.5 py-6">
+  <footer class="footer">
     <p class="text-xl">&copy; 2026 Web Frontend - Amikom Computer Club</p>
   </footer>
 </body>
